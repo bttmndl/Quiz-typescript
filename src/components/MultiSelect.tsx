@@ -124,7 +124,7 @@ function MultiSelect({ questions, setQuestions, setPage, page, name, min, sec }:
             <h1>Hello, {name} your Quiz Stats</h1>
             <h3>Total Time  0{minn}:{secc}</h3>
             <PieChart totalQuestions={5} correctlyAnswered={x} wronglyAnswered={5-x}/>
-            <button onClick={()=>window.location.reload()}>Close</button>
+            <button className="confirm-button" style={{backgroundColor:"red"}} onClick={()=>window.location.reload()}>Close</button>
           </div>
         </div>
       }
